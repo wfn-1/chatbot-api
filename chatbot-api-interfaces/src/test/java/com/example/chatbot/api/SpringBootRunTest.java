@@ -43,6 +43,8 @@ public class SpringBootRunTest {
             String text=topic.getQuestion().getText();
             logger.info("topic_id:{} text:{}",topic_id,text);
         }
+        Topics topic = topics.get(0);
+        zxsqApi.answer(groupId,cookie,topic.getTopic_id(),"我不会",false);
     }
 
     @Test
