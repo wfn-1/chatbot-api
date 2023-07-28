@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.example</groupId>
+        <groupId>cn.ccsu</groupId>
         <artifactId>chatbot-api</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
@@ -82,12 +82,12 @@
         </dependency>
 
         <dependency>
-            <groupId>org.example</groupId>
+            <groupId>cn.ccsu</groupId>
             <artifactId>chatbot-api-domain</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>org.example</groupId>
+            <groupId>cn.ccsu</groupId>
             <artifactId>chatbot-api-application</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>

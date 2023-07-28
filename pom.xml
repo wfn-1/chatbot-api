@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>cn.ccsu</groupId>
     <artifactId>chatbot-api</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -13,6 +13,7 @@
         <module>chatbot-api-application</module>
         <module>chatbot-api-interfaces</module>
         <module>chatbot-api-infrastructure</module>
+        <module>chatbot-api-common</module>
     </modules>
     <parent>
 
@@ -160,7 +161,18 @@
 
             </plugin>
 
-
+            <plugin>
+                <!--该插件用于构建可执行的Jar-->
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
 
                 <groupId>org.apache.maven.plugins</groupId>

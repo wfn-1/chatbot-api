@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="chatbot-api-common" />
         <module name="chatbot-api-interfaces" />
         <module name="chatbot-api-application" />
         <module name="chatbot-api-infrastructure" />
@@ -17,6 +18,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="chatbot-api" options="-parameters" />
       <module name="chatbot-api-application" options="-parameters" />
+      <module name="chatbot-api-common" options="-parameters" />
       <module name="chatbot-api-domain" options="-parameters" />
       <module name="chatbot-api-infrastructure" options="-parameters" />
       <module name="chatbot-api-interfaces" options="-parameters" />
